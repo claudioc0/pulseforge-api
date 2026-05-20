@@ -1,0 +1,22 @@
+### Criar um Novo Treino
+POST http://localhost:8080/api/v1/workouts
+Content-Type: application/json
+
+{
+  "name": "Treino de Força Superior",
+  "description": "Foco em progressão de carga no peitoral e tríceps",
+  "sets": [
+    {
+      "exerciseName": "Supino Reto",
+      "repetitions": 10,
+      "weightKg": 80.0,
+      "restSeconds": 90
+    },
+    {
+      "exerciseName": "Tríceps Pulley",
+      "repetitions": 12,
+      "weightKg": 35.0,
+      "restSeconds": 60
+    }
+  ]
+}
